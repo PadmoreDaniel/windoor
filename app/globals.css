@@ -503,6 +503,13 @@ address {
   text-decoration: underline;
 }
 
+.footer-links {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 0.5rem 2rem;
+}
+
 .footer-name {
   font-weight: bold;
   font-size: 1.25rem;

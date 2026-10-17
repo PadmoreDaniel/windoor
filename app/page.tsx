@@ -5,6 +5,7 @@ import {
   BUSINESS_NAME,
   EMAIL,
   EMAIL_HREF,
+  FACEBOOK_URL,
   GOOGLE_REVIEWS_URL,
   MAPS_URL,
   PHONE_DISPLAY,
@@ -105,6 +106,7 @@ const jsonLd = {
     addressCountry: "IE",
   },
   areaServed: [...areas, "County Donegal"].map((name) => ({ "@type": "Place", name })),
+  sameAs: [FACEBOOK_URL],
   openingHoursSpecification: [
     {
       "@type": "OpeningHoursSpecification",
@@ -416,9 +418,12 @@ export default function Home() {
             </a>
           </div>
           <p>{ADDRESS_LINES.join(", ")}</p>
-          <p>
+          <p className="footer-links">
             <a href={GOOGLE_REVIEWS_URL} target="_blank" rel="noopener noreferrer">
               Give a review
+            </a>
+            <a href={FACEBOOK_URL} target="_blank" rel="noopener noreferrer">
+              Find us on Facebook
             </a>
           </p>
           <p className="copyright">

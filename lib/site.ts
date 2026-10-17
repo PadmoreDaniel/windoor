@@ -13,6 +13,7 @@ export const MAPS_URL =
   encodeURIComponent("Windoor Repairs and Services, Mondooey, Manorcunningham, Co. Donegal, F92 DC66");
 
 export const GOOGLE_REVIEWS_URL = "https://www.google.com/search?q=windoorrepairsandservices";
+export const FACEBOOK_URL = "https://www.facebook.com/p/Windoor-Repairs-Services-100063504395209/";
 
 export const SITE_TITLE = "Windoor Repairs and Services";
 export const SITE_DESCRIPTION =
