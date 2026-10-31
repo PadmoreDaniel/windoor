@@ -6,6 +6,9 @@ export const PHONE_HREF = "tel:+353868979922";
 export const EMAIL = "windoors100@gmail.com";
 export const EMAIL_HREF = `mailto:${EMAIL}`;
 
+export const PHONE_2_DISPLAY = "083 848 4343";
+export const PHONE_2_HREF = "tel:+353838484343";
+
 export const ADDRESS_LINES = ["Mondooey", "Manorcunningham", "Co. Donegal", "F92 DC66"];
 
 export const MAPS_URL =
@@ -17,4 +20,4 @@ export const FACEBOOK_URL = "https://www.facebook.com/p/Windoor-Repairs-Services
 
 export const SITE_TITLE = "Windoor Repairs and Services";
 export const SITE_DESCRIPTION =
-  "PVC window and door repairs and replacements in Letterkenny and all of Co. Donegal. Over 20 years experience. Call 086 897 9922 for a free quote.";
+  "PVC window and door repairs and replacements in Letterkenny and all of Co. Donegal. Over 30 years experience. Call 086 897 9922 for a free quote.";

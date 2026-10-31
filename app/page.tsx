@@ -8,6 +8,8 @@ import {
   FACEBOOK_URL,
   GOOGLE_REVIEWS_URL,
   MAPS_URL,
+  PHONE_2_DISPLAY,
+  PHONE_2_HREF,
   PHONE_DISPLAY,
   PHONE_HREF,
   SITE_DESCRIPTION,
@@ -191,10 +193,18 @@ export default function Home() {
             <a href="#contact">Contact</a>
           </nav>
           <div className="header-contact">
-            <a className="header-phone" href={PHONE_HREF}>
-              <PhoneIcon />
-              {PHONE_DISPLAY}
-            </a>
+            <div className="header-phones">
+              <a className="header-phone" href={PHONE_HREF}>
+                <PhoneIcon />
+                {PHONE_DISPLAY}
+              </a>
+              <span className="header-phone-sep" aria-hidden="true">
+                |
+              </span>
+              <a className="header-phone" href={PHONE_2_HREF}>
+                {PHONE_2_DISPLAY}
+              </a>
+            </div>
             <a className="header-email" href={EMAIL_HREF}>
               {EMAIL}
             </a>
@@ -209,7 +219,7 @@ export default function Home() {
               <h1 id="hero-heading">Domestic, Industrial, Commercial Repairs and Replacements</h1>
               <p className="hero-lead">
                 PVC window and door repairs in Letterkenny and all of Co. Donegal, with{" "}
-                <strong className="highlight">over 20 years experience</strong>.
+                <strong className="highlight">over 30 years experience</strong>.
               </p>
               <p className="tick-heading">We repair and replace:</p>
               <ul className="tick-list">
@@ -229,6 +239,10 @@ export default function Home() {
                 <a className="btn btn-call btn-big" href={PHONE_HREF}>
                   <PhoneIcon />
                   {PHONE_DISPLAY}
+                </a>
+                <a className="btn btn-outline" href={PHONE_2_HREF}>
+                  <PhoneIcon />
+                  {PHONE_2_DISPLAY}
                 </a>
                 <a className="btn btn-outline" href={EMAIL_HREF}>
                   <MailIcon />
@@ -267,10 +281,16 @@ export default function Home() {
             </div>
             <div className="services-cta">
               <p>Not sure what you need? Just give us a ring.</p>
-              <a className="btn btn-call" href={PHONE_HREF}>
-                <PhoneIcon />
-                Call {PHONE_DISPLAY}
-              </a>
+              <div className="btn-row">
+                <a className="btn btn-call" href={PHONE_HREF}>
+                  <PhoneIcon />
+                  Call {PHONE_DISPLAY}
+                </a>
+                <a className="btn btn-ghost" href={PHONE_2_HREF}>
+                  <PhoneIcon />
+                  Call {PHONE_2_DISPLAY}
+                </a>
+              </div>
             </div>
           </div>
         </section>
@@ -286,7 +306,7 @@ export default function Home() {
               </p>
               <p>
                 We offer a fast and effective PVC window or door repair or adjustment. Having
-                serviced both domestic and commercial premises for over 20 years, our experience
+                serviced both domestic and commercial premises for over 30 years, our experience
                 makes for a reliable, quick and guaranteed service.
               </p>
               <p>
@@ -303,7 +323,7 @@ export default function Home() {
             <Image
               className="about-banner"
               src="/g-1-slider_i-1_processed.jpg"
-              alt="Repair and service of all windows and doors: hinges, handles, vents, locks, letterboxes, patio rollers, glass replacements and window restrictors. Over 20 years experience."
+              alt="Repair and service of all windows and doors: hinges, handles, vents, locks, letterboxes, patio rollers, glass replacements and window restrictors. Over 30 years experience."
               width={1920}
               height={765}
             />
@@ -363,6 +383,10 @@ export default function Home() {
                     <PhoneIcon />
                     {PHONE_DISPLAY}
                   </a>
+                  <a className="btn btn-primary" href={PHONE_2_HREF}>
+                    <PhoneIcon />
+                    {PHONE_2_DISPLAY}
+                  </a>
                   <a className="btn btn-primary btn-email" href={EMAIL_HREF}>
                     <MailIcon />
                     <EmailText />
@@ -411,6 +435,10 @@ export default function Home() {
             <a href={PHONE_HREF}>
               <PhoneIcon />
               {PHONE_DISPLAY}
+            </a>
+            <a href={PHONE_2_HREF}>
+              <PhoneIcon />
+              {PHONE_2_DISPLAY}
             </a>
             <a href={EMAIL_HREF}>
               <MailIcon />
